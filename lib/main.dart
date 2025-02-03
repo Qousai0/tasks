@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const Task1(),
+      // WE HAVE Task2() if we want to show it 
     );
   }
 }
