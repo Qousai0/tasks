@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+//Animation
+void main() {
+  runApp(Task15());
+}
+
 class Task15 extends StatefulWidget {
   @override
   _Task15State createState() => _Task15State();
@@ -22,18 +27,20 @@ class _Task15State extends State<Task15> with SingleTickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("Tween Animation Example")),
-      body: Center(
-        child: AnimatedBuilder(
-          animation: _animation,
-          builder: (context, child) {
-            return Container(
-              width: _animation.value,
-              height: _animation.value,
-              color: Colors.blue,
-            );
-          },
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: Text("Tween Animation Example")),
+        body: Center(
+          child: AnimatedBuilder(
+            animation: _animation,
+            builder: (context, child) {
+              return Container(
+                width: _animation.value,
+                height: _animation.value,
+                color: Colors.blue,
+              );
+            },
+          ),
         ),
       ),
     );
