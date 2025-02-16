@@ -1,16 +1,7 @@
 import 'package:flutter/material.dart';
-
+//SliverAppBarExample
 class Task4 extends StatelessWidget {
   const Task4({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return  SliverAppBarExample();
-  }
-}
-
-class SliverAppBarExample extends StatelessWidget {
-  const SliverAppBarExample({super.key});
 
   @override
   Widget build(BuildContext context) {

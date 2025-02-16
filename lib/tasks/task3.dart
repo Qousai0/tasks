@@ -1,16 +1,7 @@
 import 'package:flutter/material.dart';
-
+//ListViewExample
 class Task3 extends StatelessWidget {
-  const Task3({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return  ListViewExample();
-  }
-}
-
-class ListViewExample extends StatelessWidget {
-  ListViewExample({super.key});
+  Task3({super.key});
   final products = List.generate(100, (index) => 'Product $index');
 
   @override
